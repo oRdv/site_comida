@@ -55,24 +55,26 @@ h1{
     color: white;
     position: absolute;
     left: 10vh;
-    top: 10rem;
-    font-weight: 400;
-    font-size: 200px;
+    top: 53.95px;
+    font-weight: 50.72px;
+    font-size: 42px;
     line-height: 51px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hotbar{
     display: flex;
     position: absolute;
-    width: 50px;
-    height: 20px;
-    gap: 500px;
-    left: 40vh;
-    top: 10rem;
     color: white; 
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: 'Poppins', sans-serif;
+    width: 565px;
+    height: 19px;
+    left: 595px;
+    top: 74px;    
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    gap: 20px;
 
 }
 
@@ -80,7 +82,7 @@ h1{
     content: '';
     display: block;
     width: auto;
-    height: 8px;
+    height: 3px;
     background-color: #B91B17;
     border-radius: 10px;
     opacity: 0;
