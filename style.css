@@ -127,46 +127,53 @@ main{
     align-items: center;
 }
 
+.linha{
+    background-color: green;
+    display: block;
+}
+
 .menu{
     width: 103px;
-    height: 130px;
+    height: 150px;
     display: flex;
     gap: 10px;
     flex-direction: column;
     padding-left: 5%;
 }
-
-.menu::after{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #B91B17;
-    /* transform: translateY(1.75rem); */
-}
-
 .nome{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
+    font-size: 48px;
     line-height: 46px;
     color: white;
+    position: absolute;
+    width: 112.92px;
+    height: 50.72px;
+    top: 26rem;
+
 }
 
 .descricao{
     font-family: 'Istok Web';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 23px;
+    line-height: 30px;
     color: #FFFFFF;
+    align-items: flex-end;  
+    position: absolute;
+    width: 106px;
+    height: 51px;
+    top: 29rem;
+    
 }
 
 .preco{
     display: flex;
     gap: 5px;
     color: white;
+    bottom: 100vh;
 
 }
 
@@ -184,18 +191,23 @@ main{
 
 img[alt~=carnes]{
     position: absolute;
-    width: 100rem;
+    width: 110rem;
     z-index: -1;
     top: 10%;
-    right: 30%;
+    right: 42%;
 }
 
 
 .carne{
-    background-color: tomato;
     width: 475px;
-
+    font-size: 7rem;
+    gap: 3px;
+    color:white;
+    align-items: flex-end;
+    white-space: nowrap;
+    padding-left: 35%;
 }
+
 
 
 .sociais{
