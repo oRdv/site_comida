@@ -128,9 +128,14 @@ main{
 }
 
 .linha{
-    background-color: green;
     display: block;
-}
+    background-color: #6D6C6C;
+    position: absolute;
+    transform: rotate(90deg);
+    width: 190px;
+    height: 3px;
+    border-right: solid;
+    }
 
 .menu{
     width: 103px;
@@ -173,7 +178,6 @@ main{
     display: flex;
     gap: 5px;
     color: white;
-    bottom: 100vh;
 
 }
 
