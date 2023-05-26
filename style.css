@@ -27,9 +27,9 @@ header{
     align-items: center;
     font-size: 2rem;
     margin: 1.56rem 1rem 0px 1rem;
-    border-top: solid white;
-    border-left: solid white;
-    border-right: solid white;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
 }
 
 .hamburger{
@@ -118,24 +118,18 @@ img[alt~=talk]{
 }
 
 main{
-    margin: 0px 1rem 0px 1rem;
-    border-left: solid white;
-    border-right: solid white;
-    border-top: solid 2px #6D6C6C;
     display: grid;
     grid-template-columns: auto auto 84px;
     align-items: center;
 }
 
 .linha{
-    display: block;
-    background-color: #6D6C6C;
-    position: absolute;
+    width: 128px;
+    left: 100px;
+    top: 49px;
+    border: 1px solid #B91B17;
     transform: rotate(90deg);
-    width: 190px;
-    height: 3px;
-    border-right: solid;
-    }
+}
 
 .menu{
     width: 103px;
@@ -195,24 +189,22 @@ main{
 
 img[alt~=carnes]{
     position: absolute;
-    width: 110rem;
+    width: 97rem;
     z-index: -1;
     top: 10%;
-    right: 42%;
+    right: 30%;
 }
 
 
 .carne{
     width: 475px;
-    font-size: 7rem;
+    font-size: 3.8rem;
     gap: 3px;
     color:white;
     align-items: flex-end;
     white-space: nowrap;
-    padding-left: 35%;
+    padding-left: 56%;
 }
-
-
 
 .sociais{
     display: grid;
@@ -224,20 +216,38 @@ img[alt~=social]{
     width: 25px;
 }
 
-.vermei{
-    display: block;
-    background-color: #7F1116;
-    width: 18.3px;
-    height: 193px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-left: solid white ;
-}
 
 footer{
     margin: 0px 1rem 0px 1rem;
     border-left: solid white;
     border-right: solid white;
 }
+.retangulopreto{
+    position: absolute;
+    width: 900px;
+    height: 200px;
+    left: 185px;
+    top: 747px;
+    background: rgba(14, 14, 14, 0.7);
+    z-index: -1;
+}
 
+.retangulovermelho{
+    display: block;
+    position: absolute;
+    width: 525px;
+    right: 0;
+    height: 200px;
+    left: 900px;
+    top: 747px;
+    background: #781116;
+}
+
+.carne_preta{
+    position: absolute;
+    width: 190px;
+    height: 160px;  
+    left: 101px;
+    top: 747px;
+    
+}
