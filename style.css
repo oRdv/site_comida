@@ -18,16 +18,18 @@ body{
     width: 100vw;
     grid-template-rows: 115px 1fr 225px;
     height: 100vh;
+    padding-left: 20px;
+    padding-top: 20px;
 
 }
 header{
-    display: grid;
-    grid-template-columns: 84px 1fr 2fr 84px;
-    gap: 3px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
-    margin: 1.56rem 1rem 0px 1rem;
+}
+
+.logotipo{
+    display: flex;
 }
 
 .hamburger{
@@ -97,25 +99,15 @@ header{
 }
 
 .icones{
-    background-color: tomato;
-    position: absolute;
+    justify-content: flex-end;
     display: flex;
-    gap: 15px;
-    place-self: end;
+    align-items: center;
+    gap: 40px;
 }
 
 img[alt~=icone]{
     width: 25px;
 }
-
-.icones:hover path {
-    stroke: #DD4444;
-}
-
-.icones:hover {
-    cursor: pointer;
-}
-
 
 .talk{
     display: flex;
@@ -137,7 +129,7 @@ main{
 
 .linha{
     width: 140px;
-    padding-left: 100px;
+    padding-left: 10px;
     position: absolute;
     border: 1px solid #781116;
     transform: rotate(90deg);
@@ -148,7 +140,6 @@ main{
     display: flex;
     gap: 10px;
     flex-direction: column;
-    padding-left: 5%;
 }
 .nome{
     font-family: 'Inter';
@@ -175,7 +166,7 @@ main{
     width: 9rem;
     height: 1px;
     top: 22.5rem;
-    left: 7.5rem;
+    left: 6.5rem;
 }
 
 .preco{
@@ -184,11 +175,12 @@ main{
     gap: 5px;
     color: white;
     top: 26.5rem;
-    left: 7.5rem;
+    left: 5.5rem;
 }
 
 .real{
     font-size: 17px;
+    padding-left: 1rem;
 }
 
 #cents{
@@ -201,7 +193,7 @@ main{
 
 img[alt~=carnes]{
     position: absolute;
-    width: 110rem;
+    width: 90rem;
     z-index: -1;
     top: 10%;
     right: 37%;
@@ -214,24 +206,24 @@ img[alt~=carnes]{
     color:white;
     align-items: flex-end;
     white-space: nowrap;
-    padding-left: 46%;
+    padding-left: 40%;
     line-height: 66px;
 }
 
 .tite{
     position: absolute;
-    left: 76rem;
+    padding-left: 2rem;
 }
 
 .retangulo_souce{
     position: absolute;
     width: 100px;
     height: 27px;
-    left: 96rem;
-    top: 385px;
+    left: 74rem;
+    top: 370px;
     background: #781116;
     transform: matrix(0.98, -0.3, 0.19, 0.98, 0, 0);
-    z-index: -1;
+    z-index: 1;
     
 }
 
@@ -243,15 +235,15 @@ img[alt~=carnes]{
     font-size: 20px;
     line-height: 19px;
     place-content: center;
-    left: 1.5rem;
-    top: 3px;
+    padding-left: 1.5rem;
+    color: white;
 }
 
 .descricao_meat{
     position: absolute;
     width: 35rem;
     height: 42px;
-    left: 76rem;
+    left: 52rem;
     top: 570px;
     font-family: 'Poppins'; 
     font-style: normal;
@@ -282,7 +274,7 @@ footer{
 }
 .retangulopreto{
     position: absolute;
-    width: 900px;
+    width: 630px;
     height: 183px;
     left: 185px;
     top: 747px;
@@ -293,9 +285,9 @@ footer{
 .retangulovermelho{
     display: block;
     position: absolute;
-    width: 600px;
+    width: 500px;
     height: 183px;
-    left: 79rem;
+    left: 61rem;
     top: 747px;
     background: #781116;
 }
@@ -308,7 +300,7 @@ footer{
 
 .carne_vermelha{
     position: absolute;
-    left: 64rem;
+    left: 48rem;
     top: 747px;
 }
 
@@ -316,26 +308,28 @@ footer{
     position: absolute;
     width: 200px;
     height: 47px;
-    left: 23rem;
+    left: 20rem;
     top: 782px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 35px;
     line-height: 47px;
+    color: white;
 }
 
 .descricao_preta{
     position: absolute;
     width: 280px;
     height: 30px;
-    left: 23rem;
+    left: 20rem;
     top: 840px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
+    color: white;
 }
 
 
@@ -343,65 +337,70 @@ footer{
     position: absolute;
     width: 200px;
     height: 47px;
-    left: 83rem;
+    left: 64rem;
     top: 782px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 35px;
     line-height: 47px;
+    color: white;
 }
 
 .descricao_vermelha{
     position: absolute;
     width: 280px;
     height: 30px;
-    left: 83rem;
+    left: 64rem;
     top: 840px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
+    color: white;
 }
 
 .price{
     position: absolute;
     width: 110px;
     height: 40px;
-    left: 46rem;
+    left: 40rem;
     top: 780px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 15px;
+    color: white;
     }
 
 .price_valor{
     position: absolute;
     width: 26px;
     height: 27px;
-    left: 46rem;
+    left: 40rem;
     top: 800px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 27px;
+    color: white;
 }
 
 #caro{
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 49rem;
+    left: 43rem;
     top: 805px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
+    color: white;
 }
 
 .buttom{
@@ -415,7 +414,6 @@ footer{
   font-family: 'Roboto';
   font-size: 15px;
   font-weight: 400;
-  padding: 12px 50px;
   line-height: 16px;
   outline: none;
   position: absolute;
@@ -425,8 +423,11 @@ footer{
   transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
   user-select: none;
   -webkit-user-select: none;
-  width: 10rem;
-  left: 46rem;
+  white-space: nowrap;
+  padding-top: 5px;
+  height: 2rem;
+  width: 8rem;
+  left: 40rem;
   top: 835px;
 }
 
@@ -452,39 +453,42 @@ footer{
     position: absolute;
     width: 110px;
     height: 40px;
-    left: 103rem;
+    left: 84rem;
     top: 780px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 15px;
+    color: white;
     }
 
 .price_valor_red{
     position: absolute;
     width: 26px;
     height: 27px;
-    left: 103rem;
+    left: 84rem;
     top: 800px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 27px;
+    color: white;
 }
 
 #caros{
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 106rem;
+    left: 87rem;
     top: 805px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
+    color: white;
 }
 
 .buttoms{
@@ -498,7 +502,6 @@ footer{
   font-family: 'Roboto';
   font-size: 15px;
   font-weight: 400;
-  padding: 12px 50px;
   line-height: 16px;
   outline: none;
   position: absolute;
@@ -508,8 +511,11 @@ footer{
   transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
   user-select: none;
   -webkit-user-select: none;
-  width: 10rem;
-  left: 103rem;
+  white-space: nowrap;
+  padding-top: 5px;
+  height: 2rem;
+  width: 8rem;
+  left: 84rem;
   top: 835px;
 }
 
@@ -532,124 +538,381 @@ footer{
 }
 
 @media(max-width: 768px){
-    body {
-            background-color: black;
-        }
-        
-        header {
-            display: grid;
-            grid-template-columns: 84px 1fr 2fr 84px;
-            gap: 3px;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 2rem;
-            margin: 1.56rem 1rem 0px 1rem;
-        }
-        
-        .logo {
-            font-family: 'Arizonia', cursive;
-            color: white;
-            font-weight: 50.72px;
-            font-size: 48px;
-            line-height: 40px;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-            padding-left: 22px;
-        }
-        
-        .hamburger {
-            color: white;
-            display: grid;
-            align-items: end;
-            justify-content: end;
-            gap: 10px;
-        }
-        
-        .barras {
-            background-color: white;
-            width: 38px;
-            height: 2px;
-            border-radius: 15px;
-        }
-        
-        #meio {
-            background-color: white;
-            width: 18px;
-            place-self: end;
-        }
-        
-        .hotbar {
-            display: grid;
-            grid-template-columns: auto auto;
-        }
-        
-        .text {
-            display: flex;
-            color: white;
-            text-overflow: ellipsis;
-            font-family: 'Poppins', sans-serif;
-            line-height: 19px;
-            font-size: 20px;
-            letter-spacing: 0.05em;
-            gap: 20px;
-            width: fit-content;
-            align-items: flex-end;
-            cursor: pointer;
-        }
-        
-        .hot::after {
-            content: '';
-            display: block;
-            width: auto;
-            height: 3px;
-            background-color: #B91B17;
-            border-radius: 10px;
-            opacity: 0;
-            transform: translateY(1.75rem);
-        }
-        
-        .hot:hover::after {
-            opacity: 1;
-        }
-        
-        .icones {
-            background-color: tomato;
-            position: absolute;
-            display: flex;
-            gap: 15px;
-            place-self: end;
-        }
-        
-        img[alt~="icone"] {
-            width: 25px;
-        }
-        
-        .icones:hover path {
-            stroke: #DD4444;
-        }
-        
-        .icones:hover {
-            cursor: pointer;
-        }
-        
-        .talk {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-        }
-        
-        img[alt~="talk"] {
-            width: 36px;
-        }
-        
-        main {
-            display: grid;
-            grid-template-columns: auto auto 84px;
-            align-items: center;
-        }
-        
-        .linha {
-            width: 140px;
-            padding
-        }
+    
+body{
+    background-color: black;
+    display: grid;
+    width: 100vw;
+    grid-template-rows: 115px 1fr 225px;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo{
+    display: flex;
+}
+
+.hamburger{
+    color: white;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+    gap: 2px;
+}
+
+.barras{
+    background-color: white;
+    width: 28px;
+    height: 2px;
+    border-radius: 15px;
+}
+
+#meio{
+    background-color: white;
+    width: 18px;
+    place-self: end;
+
+}
+
+.logo{
+    font-family: 'Arizonia', cursive;
+    color: white;
+    font-weight: 50.72px;
+    font-size: 28px;
+    line-height: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 22px;
+}
+
+.hotbar{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text{
+    display: flex;
+    color: white; 
+    text-overflow: ellipsis;
+    font-family: 'Poppins', sans-serif;  
+    line-height: 19px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    gap: 20px;
+    width: fit-content;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.hot::after{
+    content: '';
+    display: block;
+    width: auto;
+    height: 3px;
+    background-color: #B91B17;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(1.75rem);
+}
+
+.hot:hover::after{
+    opacity: 1;
+}
+
+.icones{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+img[alt~=icone]{
+    width: 25px;
+}
+
+.talk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+img[alt~=talk]{
+    width: 36px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto 84px;
+    align-items: center;
+}
+
+.linha{
+    width: 140px;
+    padding-left: 10px;
+    position: absolute;
+    border: 1px solid #781116;
+    transform: rotate(90deg);
+}
+
+.menu{
+    height: 150px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.nome{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 46px;
+    color: white;
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 19rem;
+    padding-left: 5.2rem;
+}
+
+.descricao{
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 9rem;
+    height: 1px;
+    top: 22.5rem;
+    left: 6.5rem;
+}
+
+.preco{
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    color: white;
+    top: 26.5rem;
+    left: 5.5rem;
+}
+
+.real{
+    font-size: 17px;
+    padding-left: 1rem;
+}
+
+#cents{
+    position: absolute;
+    font-size: 12px;
+    color: #C1C1C1;
+    left: 1.5rem;
+
+}
+
+img[alt~=carnes]{
+    position: absolute;
+    width: 90rem;
+    z-index: -1;
+    top: 10%;
+    right: 37%;
+}
+
+.carne{
+    width: 500px;
+    font-size: 6rem;
+    gap: 3px;
+    color:white;
+    align-items: flex-end;
+    white-space: nowrap;
+    padding-left: 40%;
+    line-height: 66px;
+}
+
+.tite{
+    position: absolute;
+    padding-left: 2rem;
+}
+
+.retangulo_souce{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 74rem;
+    top: 370px;
+    background: #781116;
+    transform: matrix(0.98, -0.3, 0.19, 0.98, 0, 0);
+    z-index: 1;
+    
+}
+
+.souce{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    place-content: center;
+    padding-left: 1.5rem;
+    color: white;
+}
+
+.descricao_meat{
+    position: absolute;
+    width: 35rem;
+    height: 42px;
+    left: 52rem;
+    top: 570px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.sociais{
+    display: none;
+}
+.retangulovermelho{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    left: 61rem;
+    top: 747px;
+    background: #781116;
+}
+.carne_vermelha{
+    position: absolute;
+    left: 48rem;
+    top: 747px;
+}
+
+
+.descricao_titulo_vermelha{
+    position: absolute;
+    width: 200px;
+    height: 47px;
+    left: 64rem;
+    top: 782px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 47px;
+    color: white;
+}
+
+.descricao_vermelha{
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    left: 64rem;
+    top: 840px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: white;
+}
+
+
+.price_red{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    left: 84rem;
+    top: 780px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    color: white;
     }
+
+.price_valor_red{
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 84rem;
+    top: 800px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: white;
+}
+
+#caros{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 87rem;
+    top: 805px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: white;
+}
+
+.buttoms{
+  background-color: #FFFFFF;
+  border: 1px solid #781116;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  outline: none;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  padding-top: 5px;
+  height: 2rem;
+  width: 8rem;
+  left: 84rem;
+  top: 835px;
+}
+
+.buttoms:focus-visible {
+  box-shadow: #781116 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.buttoms:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.buttoms:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+}
